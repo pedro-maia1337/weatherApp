@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/style.css">
+</head>
+<body>
+    <section>
+        <h1>Weather App</h1>
+        <div class="conteiner">
+            <div class="form-input-container">
+                <input type="text" placeholder="Digite o nome da cidade" value="Belo Horizonte" class="city-input"/>
+                <button class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+
+        <div class="warning-message hide">
+            <p>Não foi possível encontrar o clima de uma cidade com este nome.</p>
+        </div>
+
+        <div class="weather-infos hide">
+            <h2 class="city-name"></h2>
+            
+            <div class="description-container">
+                <img class="weather-icon" src="clear_day.svg" alt="Condições atuais">
+                <div>
+                    <p class="temperature"><span></span>&deg;C</p>
+                    <p class="description"></p>
+                </div>
+            </div>
+
+            <div class="details-container">
+                <div class="info">
+                    <i id="umidity-icon" class="fa-solid fa-droplet" ></i>
+                    <div>
+                        <h2>Umidade</h2>
+                        <p id="umidity"><span></span></p>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <i id="wind-icon" class="fa-solid fa-wind"></i>
+                    <div>
+                        <h2>Ventos</h2>
+                        <p id="wind"><span></span></p>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <i id="temp-max-icon" class="fa-solid fa-temperature-high"></i>
+                    <div>
+                        <h2>Temperatura máxima</h2>
+                        <p id="temp-max"><span></span>&deg;C</p>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <i id="temp-min-icon" class="fa-solid fa-temperature-low"></i>
+                    <div>
+                        <h2>Temperatura miníma</h2>
+                        <p id="temp-min"><span></span>&deg;C</p>
+                    </div> 
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+<script src="src/js/script.js"></script>
+</html>
