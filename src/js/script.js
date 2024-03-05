@@ -16,6 +16,7 @@ const tempMin = document.querySelector('#temp-min span')
 
 const apiKey = '2936133140c74070effccbc9721bf5bc'
 const apiURL = `https://api.openweathermap.org/data/2.5/weather?`
+const apiCountryURL = "https://countryflagsapi.com/png/";
 
 const getWeatherData = async (city) => {
     try{
